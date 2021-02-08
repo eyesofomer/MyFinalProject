@@ -58,6 +58,7 @@ namespace DataAccess.Concrete.InMemory
         public List<Product> GetAllByCategory(int categoryId)
         {
             _products.Where(p => p.CategoryId == categoryId).ToList();
+
         }
     }
 }
